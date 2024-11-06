@@ -15,35 +15,34 @@ This documentation assumes that readers have completed the Light Color Sensor mi
 ### Electronic parts: 
 
   - Sensor Package:
-    - PicoW
-    - Pico LipoSHIM
-    - Picowbell P5905
-    - Wireless charger receiver
-    - AS7341 color sensor
-    - Lipo battery with 2-pole JST connector wire 
-    - STEMMA QT Wire
-    - 1 Pin male connector jumper wires (2x)
+    - <span style="background-color: #FF2600; color: #FFFFFF;"> PicoW </span>
+    - <span style="background-color: #3366FF; color: #FFFFFF;"> Pico LipoSHIM  </span>
+    - <span style="background-color: #FFA500; color: #FFFFFF;"> Picowbell P5905  </span>
+    - <span style="background-color: #008000; color: #FFFFFF;"> Wireless charger receiver  </span>
+    - <span style="background-color: #FF00FF; color: #FFFFFF;"> AS7341 color sensor  </span>
+    - <span style="background-color: #FFFF00; color: #000000;"> Lipo battery with 2-pole JST connector wire  </span>
+    - <span style="background-color: #800080; color: #FFFFFF;"> STEMMA QT Wire  </span>
+    - <span style="background-color: #00FFFF; color: #000000;"> 1 Pin male connector jumper wires (2x)  </span>
 
   - Wireless charging port (Dual charging):
-    - Wireless charger transmitters (2x)
-    - Mirco-USB to USB Type-A cables (1 short and 1 long)
-    - Power supply (5V 2A)
+    - <span style="background-color: #FF2600; color: #FFFFFF;"> Wireless charger transmitters (2x) </span>
+    - <span style="background-color: #FFA500; color: #FFFFFF;"> Mirco-USB to USB Type-A cables (1 short and 1 long) </span>
+    - <span style="background-color: #3366FF; color: #FFFFFF;"> Power supply (5V 2A) </span>
 
 ### 3D printed parts: 
 
   - Sensor package: 
-    - Sensor package main enclosure
-    - Microcontroller backboard
-    - Sensor stand
+    - <span style="background-color: #FF2600; color: #FFFFFF;"> Microcontroller backboard</span>
+    - <span style="background-color: #FFA500; color: #FFFFFF;"> Sensor stand</span>
+    - <span style="background-color: #3366FF; color: #FFFFFF;"> Sensor package main enclosure</span>
 
   - Wireless Charging port: 
-    - Enclosure A side
-    - Enclosure B side
-    - Base 
-    - Transmitter supports (2x)
+    - <span style="background-color: #FF2600; color: #FFFFFF;">Enclosure A side</span>
+    - <span style="background-color: #FFA500; color: #FFFFFF;"> Enclosure B side</span>
+    - <span style="background-color: #3366FF; color: #FFFFFF;">Base</span>
+    - <span style="background-color: #FF00FF; color: #FFFFFF;"> Transmitter supports (2x) </span>
 
    (Note: More details about 3D printing file should be added here)
-
 ### Tools: 
 
   - Required:
