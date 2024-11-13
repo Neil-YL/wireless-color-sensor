@@ -2,7 +2,12 @@
 
 ## Overview 
 
-This documentation provides a guide to assemble and test a color sensor package with a wireless charging port that could be implemented to the OT-2 liquid handling robot. The estimated time
+This documentation provides a guide to assemble and test a color sensor package with a wireless charging port that could be implemented to the OT-2 liquid handling robot. Following is a video of liquid color matching demo run on OT-2 with this wireless color sensor:
+
+(Youtube link to be added)
+
+The estimated time of the hardware assembly is around:
+
 <br>
 
 ## Prerequisites
@@ -20,14 +25,14 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
       <img src="_static/images/Electronic-parts-sensor.png" width="500">
     </div>
 
-    - <span class="color-red">PicoW</span>
-    - <span class="color-blue">Pico LipoSHIM</span>
-    - <span class="color-orange">Picowbell P5905</span>
-    - <span class="color-green">Wireless charger receiver</span>
-    - <span class="color-magenta">AS7341 color sensor</span>
-    - <span class="color-yellow">Lipo battery with 2-pole JST connector wire</span>
-    - <span class="color-purple">STEMMA QT Wire</span>
-    - <span class="color-cyan">1 Pin male connector jumper wires (2x)</span>
+    - [<span class="color-red">PicoW</span>](https://www.digikey.com/en/products/detail/raspberry-pi/SC0919/18713315)
+    - [<span class="color-blue">Pico LipoSHIM</span>](https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM557/15851380)
+    - [<span class="color-orange">Picowbell P5905</span>](https://www.digikey.com/en/products/detail/adafruit-industries-llc/5905/22596390)
+    - [<span class="color-green">Wireless charger receiver</span>](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/317010008/5487684)
+    - [<span class="color-magenta">AS7341 color sensor</span>](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4698/13162109)
+    - [<span class="color-yellow">Lipo battery with 2-pole JST connector wire</span>](https://www.amazon.ca/EEMB-Battery-Rechargeable-Lithium-Connector/dp/B08FD3V6TF/)
+    - [<span class="color-purple">STEMMA QT Wire</span>](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-17258/13629029)
+    - [<span class="color-cyan">1 Pin male connector jumper wires (2x)</span>](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4482/11594500)
 
    <br style="clear: both;"> 
 
@@ -37,7 +42,7 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
       <img src="_static/images/Electronic-parts-charging.png" width="500">
     </div>
 
-    - <span class="color-red"> Wireless charger transmitters (2x) </span>
+    - [<span class="color-red"> Wireless charger transmitters (2x) </span>](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/113030020/5487569)
     - <span class="color-orange"> Mirco-USB to USB Type-A cables (1 short and 1 long) </span>
     - <span class="color-blue"> Power supply (5V 2A) </span>
    
