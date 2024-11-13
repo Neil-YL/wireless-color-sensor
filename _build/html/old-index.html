@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Getting started guide for wireless color sensor &#8212; Getting started guide for wireless color sensor</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f244291d" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'old-index';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<script defer data-domain="ac-training-lab.readthedocs.io" src="https://plausible.io/js/script.js"></script>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Getting started guide for wireless color sensor</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/old-index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting started guide for wireless color sensor</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bill-of-materials">Bill of materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-assembly">Hardware assembly</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assembling">Assembling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-part">Software part</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="getting-started-guide-for-wireless-color-sensor">
+<h1>Getting started guide for wireless color sensor<a class="headerlink" href="#getting-started-guide-for-wireless-color-sensor" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>This documentation provides a guide to assemble and test a color sensor package with a wireless charging port that could be implemented to the OT-2 liquid handling robot. The estimated time (tba)</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<p>This documentation assumes that readers have completed the Light Color Sensor microcourse and possess basic knowledge of electronic soldering and wiring techniques.</p>
+</section>
+<section id="bill-of-materials">
+<h2>Bill of materials<a class="headerlink" href="#bill-of-materials" title="Link to this heading">#</a></h2>
+<p><strong>Electronic parts</strong>:</p>
+<div style="float: right; margin-left: 10px; width: 500px;">
+    <img src="_static/images/Electronic-parts-sensor.png" alt="Electronic parts" width="500">
+</div><ul>
+<li><p><strong>Sensor Package</strong>:</p>
+<ul>
+<li><div class="color-red">PicoW</div></li>
+<li><div class="color-blue">Pico LipoSHIM</div></li>
+<li><div class="color-orange">Picowbell P5905</div></li>
+<li><div class="color-green">Wireless charger receiver</div></li>
+<li><div class="color-magenta">AS7341 color sensor</div></li>
+<li><div class="color-yellow">Lipo battery with 2-pole JST connector wire</div></li>
+<li><div class="color-purple">STEMMA QT Wire</div></li>
+<li><div class="color-cyan">1 Pin male connector jumper wires (2x)</div></li>
+</ul>
+</li>
+</ul>
+<br><div style="float: right; margin-left: 10px; width: 500px;">
+    <img src="_static/images/Electronic-parts-charging.png" alt="Electronic parts" width="500">
+</div><ul>
+<li><p><strong>Wireless charging port (Dual charging)</strong>:</p>
+<ul>
+<li><div class="color-red"> Wireless charger transmitters (2x)</div></li>
+<li><div class="color-orange"> Micro-USB to USB Type-A cables (1 short and 1 long) </div></li>
+<li><div class="color-blue"> Power supply (5V 2A)</div></li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><p><strong>3D printed parts:</strong></p>
+<div style="float: right; margin-left: 10px; width: 500px;">
+    <img src="_static/images/Printed-parts-sensor.png" alt="Electronic parts" width="500">
+</div><ul>
+<li><p><strong>Sensor package</strong>:</p>
+<ul>
+<li><div class="color-red"> Microcontroller backboard </div></li>
+<li><div class="color-orange"> Sensor stand </div></li>
+<li><div class="color-blue"> Sensor package main enclosure</div></li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><div style="float: right; margin-left: 10px; width: 500px;">
+    <img src="_static/images/Printed-parts-charging.png" alt="Electronic parts" width="500">
+</div><ul>
+<li><p><strong>Wireless Charging port</strong>:</p>
+<ul>
+<li><div class="color-red"> Enclosure A side </div></li>
+<li><div class="color-orange"> Enclosure B side </div></li>
+<li><div class="color-blue"> Base</div></li>
+<li><div class="color-magenta"> Transmitter supports (2x)</div></li>
+</ul>
+<p><em>(Note: More details about 3D printing files should be added here)</em></p>
+</li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><p><strong>Tools</strong>:</p>
+<ul class="simple">
+<li><p><strong>Required</strong>:</p>
+<ul>
+<li><p>Soldering set</p></li>
+<li><p>Phillips-head #0 screwdriver</p></li>
+<li><p>M2.5-10mm screws and M2.5 hex nuts (4x each)</p></li>
+<li><p>Painter’s tape</p></li>
+</ul>
+</li>
+<li><p><strong>Nice to have</strong>:</p>
+<ul>
+<li><p>Tools to remove 3D printing supports and deburr surface</p></li>
+<li><p>Multimeter for electronic connection troubleshooting</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="hardware-assembly">
+<h2>Hardware assembly<a class="headerlink" href="#hardware-assembly" title="Link to this heading">#</a></h2>
+<p><strong>Preparation / Before you begin assembling</strong>:</p>
+<p>Note: Photos will be added for each step starting from here</p>
+<p><strong>3D printed parts preparation</strong>:</p>
+<p>Remove all printing supports from the 3D-printed parts. Deburr the inner walls of the sensor package and the charging port enclosure, especially areas that will be used for assembly.</p>
+<p>Electronic soldering:</p>
+<ol class="arabic">
+<li><p><strong>LipoSHIM</strong>:</p>
+<p>Place the LipoSHIM on the back of the PicoW. Ensure the button on the LipoSHIM is on the same side as the micro-USB port on the PicoW. Solder 8 pins on each row on the PicoW.</p>
+</li>
+<li><p><strong>Battery connector</strong>:</p>
+<p>If the polarity of your battery’s 2-pin JST connector is opposite to that of the LipoSHIM, you can correct it by cutting off the connector, swapping the wires, and resoldering them to match the correct polarity.</p>
+</li>
+<li><p><strong>Wireless charging unit</strong>:</p>
+<p>Solder a jumper wire to the GND pad and another to the C1+ (or C2+) pad on the receiver board. Connect the transmitter to a power supply via USB cable and place the receiver on top of the transmitter (coils to coils). Check if the blue LED charging indicator on the transmitter board lights up. You may use a multimeter to measure the voltage between the two jumper wires; the reading should be approximately 5V.</p>
+</li>
+</ol>
+<p><strong>Dual charging connection check</strong>:</p>
+<blockquote>
+<div><p>You may check the connection of the dual wireless charging setup before start assembling. Use the short micro-USB/USB Type-A cable to connect both transmitters and connect the transmitter with a free micro-USB port to a power supply. Test the receiver using the same procedure above; the voltage reading should be approximately 5V on each transmitter.</p>
+</div></blockquote>
+</section>
+<section id="assembling">
+<h2>Assembling<a class="headerlink" href="#assembling" title="Link to this heading">#</a></h2>
+<p>Sensor Package assembling:</p>
+<ol class="arabic">
+<li><p><strong>Connect battery to PicoW and LipoSHIM assembly</strong>:</p>
+<p>Ensure the battery connector’s polarity matches the +/- markings on the LipoSHIM. Connect the battery to the LipoSHIM with the JST connector. Adjust the wire of the battery to pass through a row of pins on the PicoW.</p>
+<p>Test connection: Press the button on the LipoSHIM to power on the PicoW; the white LED indicator on the LipoSHIM should light up. Connect the PicoW to a power supply via the micro-USB port; the red LED charging indicator on the LipoSHIM should light up as well. Power off and disconnect the power supply before proceeding.</p>
+</li>
+<li><p><strong>Mount PicoW on Picowbell</strong>:</p>
+<p>Place the PicoW on the top of the Picowbell sockets; the micro-USB port on PicoW should be at the same side as the STEMMA QT port on Picowbell. Carefully align the pins and press down the PicoW to secure it.</p>
+</li>
+<li><p><strong>Connect wireless charging receiver to Picowbell</strong>:</p>
+<p>Connect the GND jumper wire from the receiver to the GND socket (third on the right) on the Picowbell. Connect the positive jumper wire to the VBUS socket (first on the right) on the Picowbell. Place the receiver on the powered transmitter; the red LED indicator on LipoSHIM and the blue LED indicator on the transmitter should light up.</p>
+</li>
+<li><p><strong>Connect AS7341 to Picowbell</strong>:</p>
+<p>Connect AS7341 to Picowbell with a STEMMA QT wire. Turn on the PicoW (using the button on the LipoSHIM); the green LED indicator on AS7341 should light on.</p>
+</li>
+<li><p><strong>Assemble Picowbell to the backboard</strong>:</p>
+<p>Align the assembly holes on Picowbell to those on the backboard, ensuring that the micro-USB port on PicoW is positioned at the opening slot side of the backboard. Secure the screws and nuts with a screwdriver.</p>
+</li>
+<li><p><strong>Place sensor stand to the main enclosure end</strong>:</p>
+<p>Position the sensor stand with the thinner edge close to the enclosure’s opening and spikes on the top. Insert it into the sensor end of the main enclosure.</p>
+</li>
+<li><p><strong>Secure the color sensor to the stand</strong>:</p>
+<p>Face down the AS7341, aligning the assemble holes with the spikes, and secure it to the stand.</p>
+</li>
+<li><p><strong>Place wireless charger receiver on the inner wall of the enclosure and secure with painter’s tape.</strong></p></li>
+<li><p><strong>Aligning and assembling the backboard to the main enclosure.</strong></p></li>
+</ol>
+<p>Dual Charging port assembling:</p>
+<ol class="arabic simple">
+<li><p><strong>Join the A and B sides of the charging port enclosure and secure both parts together.</strong></p></li>
+<li><p><strong>Plug the short micro-USB cable into one transmitter.</strong></p></li>
+</ol>
+<blockquote>
+<div><p>Place the transmitter onto the transmitter support, route the coil wire down, and insert the support into the port enclosure.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Thread the long micro-USB cable into the assembly and place the second transmitter similarly.</strong></p></li>
+<li><p><strong>Arrange the cables and secure the base board to the port enclosure.</strong></p></li>
+</ol>
+</section>
+<section id="software-part">
+<h2>Software part<a class="headerlink" href="#software-part" title="Link to this heading">#</a></h2>
+<p><em>(Additional software instructions will be provided here)</em></p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bill-of-materials">Bill of materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-assembly">Hardware assembly</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assembling">Assembling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-part">Software part</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Neil-YL
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Neil-YL.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
