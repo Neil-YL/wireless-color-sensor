@@ -315,8 +315,11 @@
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>This documentation provides a guide to assemble and test a color sensor package with a wireless charging port that could be implemented to the OT-2 liquid handling robot. Following is a video of liquid color matching demo run on OT-2 with this wireless color sensor:</p>
-<p>(Youtube link to be added)</p>
-<p>The estimated time of the hardware assembly is around:</p>
+   <div style="text-align: center; margin-top: 10px;">
+      <img src="_static/images/Wireless-color-sensor-in-OT-2.png" width="500">
+  </div>
+<p>(Video link to be added)</p>
+<p>The estimated time of the hardware assembling is:</p>
 <br>
 </section>
 <section id="prerequisites">
@@ -359,6 +362,16 @@
 <br style="clear: both;"> 
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Qi wireless charging:</strong>
+The wireless charging modules linked above comply with the <a class="reference external" href="https://en.wikipedia.org/wiki/Qi_(standard)">Qi standard</a>, providing a consistent power output of 5V/500mA within an effective distance of 2-8mm. However, they are relatively more expensive.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Alternative:</strong>
+One lower-cost alternative is <a class="reference external" href="https://www.adafruit.com/product/1459">this inductive charging set</a>, which requires a 9V power supply. Note that its output is less efficient and inconsistent, varying based on the power input and charging distance. Additionally, it lacks electromagnetic shielding and USB ports, which may require more advanced electronic knowledge to configure.</p>
+</div>
 </section>
 <section id="d-printed-parts">
 <h3>3D printed parts:<a class="headerlink" href="#d-printed-parts" title="Link to this heading">#</a></h3>
@@ -406,47 +419,65 @@
 </ul>
 <br style="clear: both;"> 
 </li>
+</ul>
+ <br>
+<ul>
 <li><p><strong>Tools required:</strong></p>
  <div style="float: right; margin-left: 10px; width: 500px;">
-  <img src="_static/images/Bolt-nut-tape.png" width="500">
+  <img src="_static/images/Tools-required.png" width="500">
  </div>
 <ul class="simple">
-<li><p><span class="color-red">Phillips-head #0 screwdriver</span></p></li>
-<li><p>Soldering set</p></li>
+<li><p><span class="color-red">① Phillips-head #0 screwdriver</span></p></li>
+<li><p><span class="color-blue">② Soldering set</span></p></li>
 </ul>
 </li>
 </ul>
   <br style="clear: both;"> 
-<ul class="simple">
-<li><p><strong>Tools nice to have:</strong></p>
+ <br>
 <ul>
-<li><p>Tools to remove 3D printing supports and deburr surface</p></li>
-<li><p>Multimeter for electronic connection troubleshooting</p></li>
+<li><p><strong>Tools nice to have:</strong></p>
+ <div style="float: right; margin-left: 10px; width: 500px;">
+  <img src="_static/images/Tools-nice-to-have.png" width="500">
+ </div>
+<ul class="simple">
+<li><p><span class="color-red">① Tools to remove 3D printing supports and deburr surface</span></p></li>
+<li><p><span class="color-blue">② Multimeter for electronic connection troubleshooting</span></p></li>
 </ul>
 </li>
 </ul>
-  <div style="text-align: center; margin-top: 10px;">
-    <img src="_static/images/Soldering.png" style="width: 750px;">
-  </div>
- <br>
+  <br style="clear: both;"> 
 </section>
 </section>
 <section id="hardware-assembly">
 <h2>Hardware assembly:<a class="headerlink" href="#hardware-assembly" title="Link to this heading">#</a></h2>
 <section id="preparation-before-you-begin-assembling">
 <h3>Preparation / Before you begin assembling:<a class="headerlink" href="#preparation-before-you-begin-assembling" title="Link to this heading">#</a></h3>
-<p>(Note: photos will be added for each step starting from here)</p>
 <section id="d-printed-parts-preparation">
 <h4>3D printed parts preparation:<a class="headerlink" href="#d-printed-parts-preparation" title="Link to this heading">#</a></h4>
-<p>Remove all printing supports from the 3D-printed parts. Deburr all the supported surface, especially heighted areas (<span class="color-red">inner walls of the sensor package</span> and <span class="color-orange">those of the charging port enclosure A/B</span>) that will be used for assembly.</p>
-  <div style="text-align: center; margin-top: 10px;">
-    <img src="_static/images/inner-wall.png" style="width: 500px;">
-  </div>
+<p>Remove all printing supports from the 3D-printed parts. Deburr all the supported surfaces and edges, especially following heighted areas that will be used for assembly.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p><span style="padding-left: 10px;">Use wirecutters to remove most of the supports from the printed parts.</span><br />
 <span style="padding-left: 10px;">Clean up remaining spikes with sharp utility knives or scissors.</span></p>
 </div>
+<ul class="simple">
+<li><p><span class="color-red">inner walls of the sensor package</span> and <span class="color-orange">those of the charging port enclosure A/B</span></p></li>
+</ul>
+  <div style="text-align: center; margin-top: 10px;">
+    <img src="_static/images/inner-wall.png" style="width: 500px;">
+  </div>
+  <br>
+<ul class="simple">
+<li><p><span class="color-blue">sliding slots</span> on the sensor enclosure and <span class="color-blue">tips</span> on the controller backboard.</p></li>
+</ul>
+  <div style="text-align: center; margin-top: 10px;">
+    <img src="_static/images/Sliding-slots.png" style="width: 500px;">
+  </div>
+ <br>
+<p>You may also test the fit between the sensor enclosure and the pipette on the OT-2. Polish as needed until it achieves a similar fit shown in the photo.</p>
+  <div style="text-align: center; margin-top: 10px;">
+    <img src="_static/images/Fitting-of-pipette.png" style="width: 400px;">
+  </div>
    <br>
 </section>
 <section id="electronic-parts-soldering">
@@ -490,7 +521,7 @@ You can correct it by cutting off the connector, swapping the wires, and then re
 <br>
 <ol class="arabic" start="3">
 <li><p><strong>Wireless charging unit:</strong></p>
-<p>Solder a jumper wire to <span class="color-blue">the GND pad</span> and another to <span class="color-red">the C1+ (or C2+) pad</span> on the receiver board.</p>
+<p>Solder a jumper wire to <span class="color-red">the C1+ (or C2+) pad</span> and another to <span class="color-blue">the GND pad</span> on the receiver board.</p>
 <div style="text-align: center; margin-top: 10px;">
   <img src="_static/images/Receiver-soldering-1.png" style="width: 500px;">
 </div>     
@@ -507,7 +538,9 @@ You can correct it by cutting off the connector, swapping the wires, and then re
 </section>
 <section id="dual-charging-connection-check">
 <h4>Dual charging connection check:<a class="headerlink" href="#dual-charging-connection-check" title="Link to this heading">#</a></h4>
-<p>You may also check the connection of the dual wireless charging setup before start assembling. Use the short micro-USB/USB Type-A cable to connect both transmitters and connect the transmitter that has a free micro-USB port to a power supply. Test the receiver with the same procedure above for the wireless charging unit, the receiver should give a voltage reading of approximately 5V on each transmitter.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>You may also check the connection of the dual wireless charging setup before start assembling. Use the short micro-USB/USB Type-A cable to connect two transmitters and connect the transmitter that has a free micro-USB port to a power supply. Test the receiver with the same procedure above for the wireless charging unit, the receiver should give a voltage reading of approximately 5V on each transmitter.
+</pre></div>
+</div>
   <div style="text-align: center; margin-top: 10px;">
     <img src="_static/images/Dual-charging-test.png" style="width: 500px;">
   </div>      
@@ -519,8 +552,8 @@ You can correct it by cutting off the connector, swapping the wires, and then re
 <section id="sensor-package-assembling">
 <h4>Sensor Package assembling:<a class="headerlink" href="#sensor-package-assembling" title="Link to this heading">#</a></h4>
 <ol class="arabic">
-<li><p>Connect battery to Picow and LipoSHIM assembly:</p>
-<p>Ensure the polarity of the battery matches the +/- markings on the LipoSHIM, if you are using the battery from the link provided in BOM section, <a class="reference internal" href="#battery-connector"><span class="xref myst">reverse</span></a> the polarity before connecting it to the LipoSHIM.</p>
+<li><p><strong>Connect battery to Picow and LipoSHIM assembly:</strong></p>
+<p>Ensure the polarity of the battery matches the +/- markings on the LipoSHIM, if you are using the battery from the link provided in BOM section, <a class="reference internal" href="#battery-connector"><span class="xref myst">reverse the polarity</span></a> before connecting it to the LipoSHIM.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Never connect your battery to PicoSHIM with wrong polarity!</p>
@@ -537,26 +570,60 @@ You can correct it by cutting off the connector, swapping the wires, and then re
 <br>
 <p>Power off and disconnect the power supply before proceeding with following steps.</p>
 </li>
-<li><p>Mount PicoW on Picowbell:</p>
-<p>Place the PicoW on the top of the Picowbell sockets; the micro-USB port on PicoW should be at the same side as the STEMMA QT port on Picowbell. Carefully align the pins and press down the PicoW to secure it onto the Picowbell.</p>
+<li><p><strong>Mount PicoW on Picowbell:</strong></p>
+<p>Place the PicoW on the top of the Picowbell sockets; <span class="color-red">the micro-USB port</span> on PicoW should be at the same side as <span class="color-blue">the STEMMA QT port</span> on Picowbell.</p>
+ <div style="text-align: center; margin-top: 10px;">
+  <img src="_static/images/Picow-Picowbell-1.png" style="width: 500px;">
+</div>   
+<br>     
+<p>Carefully align the pins and press down the PicoW to secure it onto the Picowbell.</p>
 </li>
 </ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Since the power button on the PicoSHIM will interfere with the STEMMA QT port on the Picowbell, you don’t need to push the PicoW pins all the way down.</p>
+<p>Since the power button on the PicoSHIM will interfere with the STEMMA QT port on the Picowbell, you don’t need to push the PicoW all the way down.</p>
 </div>
 <ol class="arabic" start="3">
-<li><p>Connect wireless charging receiver to Picowbell:</p>
-<p>Connect the GND jumper wire from the receiver to the GND socket (third on the right) on the Picowbell.</p>
-<p>Connect the positive jumper wire to the VBUS socket (first on the right) on the Picowbell.</p>
-<p>Place the receiver on the powered transmitter, the red LED indicator on LipoSHIM and the blue LED indicator on the transmitter should light up.</p>
+<li><p><strong>Connect wireless charging receiver to Picowbell:</strong></p>
+<p>Connect the GND jumper wire from the receiver to <span class="color-red">the GND socket</span> (third on the right, No.38) on the Picowbell.</p>
+<p>Connect the C1+(or C2+) jumper wire to <span class="color-blue">the VBUS socket</span> (first on the right, No.40) on the Picowbell.</p>
+ <div style="text-align: center; margin-top: 10px;">
+  <img src="_static/images/Picow-Pin-1.png" style="width: 750px;">
+</div>  
+<br> 
+<p>Place the receiver on the powered transmitter, <span class="color-red">the red LED indicator</span> on LipoSHIM and <span class="color-blue">the blue LED indicator</span> on the transmitter should light up.</p>
+<div style="text-align: center; margin-top: 10px;">
+  <img src="_static/images/Receiver-Picowbell-1.png" style="width: 500px;">
+</div>   
+<br> 
 </li>
-<li><p>Connect AS7341 to Picowbell:</p>
-<p>Connect AS7341 to Picowbell with a STEMMA QT wire. Turn on the Picow (using the button on the LipoSHIM), the green LED indicator on AS7341 should light on.</p>
-<p>Test the color sensor (software testing should come in here)</p>
+<li><p><strong>Connect AS7341 to Picowbell:</strong></p>
+<p>Connect <span class="color-red">AS7341</span> to <span class="color-blue">Picowbell’s STEMMA QT port</span> with a STEMMA QT wire.</p>
+<div style="text-align: center; margin-top: 10px;">
+  <img src="_static/images/AS7341-Picobell-1.png" style="width: 500px;">
+</div>   
+<br>       
+ Turn on the Picow (using the button on LipoSHIM), <span class="color-green">the green LED indicator</span> on AS7341 should light on.
+<div style="text-align: center; margin-top: 10px;">
+  <img src="_static/images/AS7341-Picobell-2.png" style="width: 500px;">
+</div>   
+<br>   
+<p>Test the color sensor (software testing section)</p>
 </li>
-<li><p>Assemble Picowbell to the backboard:</p>
-<p>Align the assemble holes on Picowbell to those on the backboard, ensuring that the micro-USB port on Picow is positioned on the side of the backboard’s opening slot. Secure the screws and nuts with a screwdriver.</p>
+<li><p><strong>Assemble Picowbell to the backboard:</strong></p>
+<p>Align the assemble holes on Picowbell to those on the backboard, ensuring that <span class="color-red">the micro-USB port</span> on Picow is positioned on the side of <span class="color-blue">the backboard’s opening slot</span>, adjusting the sensor cable to <span class="color-orange">one side within the case</span>.</p>
+<div style="text-align: center; margin-top: 10px;">
+  <img src="_static/images/ Picowbell-to-backboard-1.png" style="width: 600px;">
+</div>   
+<br>   
+<p>Insert <span class="color-red">the screws</span> through the holes on the Picowbell, position the nuts from <span class="color-blue">the back of the backboard</span>, and secure them with a screwdriver.</p>
+<div style="text-align: center; margin-top: 10px;">
+  <img src="_static/images/ Picowbell-to-backboard-2.png" style="width: 600px;">
+</div> 
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The positions of the nuts and screws can be swapped, but this method is generally easier for assembly.</p>
+</div>
 </li>
 <li><p>Place sensor stand to the main enclosure end:</p>
 <p>The sensor stand is a thin board with four spikes, designed with a thinner edge and a thicker edge. Position the sensor stand with the thinner edge close to the opening of the main enclosure and spikes on the top. Insert it into the sensor end of the main enclosure.</p>
