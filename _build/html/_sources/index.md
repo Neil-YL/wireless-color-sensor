@@ -25,14 +25,16 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
       <img src="_static/images/Electronic-parts-sensor.png" width="500">
     </div>
 
-    - [<span class="color-red">PicoW</span>](https://www.digikey.com/en/products/detail/raspberry-pi/SC0919/18713315)
-    - [<span class="color-blue">Pico LipoSHIM</span>](https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM557/15851380)
-    - [<span class="color-orange">Picowbell P5905</span>](https://www.digikey.com/en/products/detail/adafruit-industries-llc/5905/22596390)
-    - [<span class="color-green">Wireless charger receiver</span>](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/317010008/5487684)
-    - [<span class="color-magenta">AS7341 color sensor</span>](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4698/13162109)
-    - [<span class="color-yellow">Lipo battery with 2-pole JST connector wire</span>](https://www.amazon.ca/EEMB-Battery-Rechargeable-Lithium-Connector/dp/B08FD3V6TF/)
-    - [<span class="color-purple">STEMMA QT Wire</span>](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-17258/13629029)
-    - [<span class="color-cyan">1 Pin male connector jumper wires (2x)</span>](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4482/11594500)
+    - [<span class="color-red">① PicoW</span>](https://www.digikey.com/en/products/detail/raspberry-pi/SC0919/18713315)
+    - [<span class="color-blue">② Pico LipoSHIM</span>](https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM557/15851380)
+    - [<span class="color-magenta">③ AS7341 color sensor</span>](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4698/13162109)
+    - [<span class="color-orange">④ Picowbell P5905</span>](https://www.digikey.com/en/products/detail/adafruit-industries-llc/5905/22596390)
+    - [<span class="color-purple">⑤ STEMMA QT Wire</span>](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-17258/13629029)
+    - [<span class="color-green">⑥ Wireless charger receiver</span>](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/317010008/5487684)
+
+    - [<span class="color-yellow">⑦ Lipo battery with 2-pole JST connector wire</span>](https://www.amazon.ca/EEMB-Battery-Rechargeable-Lithium-Connector/dp/B08FD3V6TF/)
+
+    - [<span class="color-cyan">⑧ 1 Pin male connector jumper wires (2x)</span>](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4482/11594500)
 
    <br style="clear: both;"> 
 
@@ -42,9 +44,9 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
       <img src="_static/images/Electronic-parts-charging.png" width="500">
     </div>
 
-    - [<span class="color-red"> Wireless charger transmitters (2x) </span>](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/113030020/5487569)
-    - <span class="color-orange"> Mirco-USB to USB Type-A cables (1 short and 1 long) </span>
-    - <span class="color-blue"> Power supply (5V 2A) </span>
+    - [<span class="color-red">① Wireless charger transmitters (2x) </span>](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/113030020/5487569)
+    - <span class="color-orange"> ② Mirco-USB to USB Type-A cables ([1 short](https://www.amazon.ca/gp/product/B073PQWY2B/) and [1 long](https://www.digikey.ca/en/products/detail/stewart-connector/SC-2AMK003F/8544577)) </span>
+    - [<span class="color-blue">③ Power supply (5V 2A) </span>](https://www.digikey.ca/en/products/detail/xp-power/VEL05US050-US-BB/5023710)
    
     <br style="clear: both;"> 
 
@@ -56,44 +58,54 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
       <img src="_static/images/Printed-parts-sensor.png" width="500">
      </div>
 
-    - <span class="color-red"> Microcontroller backboard</span>
-    - <span class="color-orange"> Sensor stand</span>
-    - <span class="color-blue"> Sensor package main enclosure</span>
+    - <span class="color-red">① Microcontroller backboard</span>
+    - <span class="color-orange">② Sensor stand</span>
+    - <span class="color-blue">③ Sensor package main enclosure</span>
     
     <br style="clear: both;"> 
 
   <br>
 
-  - **Wireless Charging port:** 
+  - **Wireless charging port:** 
 
      <div style="float: right; margin-left: 10px; width: 500px;">
       <img src="_static/images/Printed-parts-charging.png" width="500">
      </div>
 
-    - <span class="color-red">Enclosure A side</span>
-    - <span class="color-orange"> Enclosure B side</span>
-    - <span class="color-blue">Base</span>
-    - <span class="color-magenta"> Transmitter supports (2x) </span>
+    - <span class="color-red">① Enclosure A side</span>
+    - <span class="color-orange">② Enclosure B side</span>
+    - <span class="color-blue">③ Base</span>
+    - <span class="color-magenta">④ Transmitter supports (2x) </span>
 
     <br style="clear: both;"> 
 
   All the 3D printing files can be found in [this link](https://github.com/Neil-YL/wireless-color-sensor/tree/07829dd6418d59315a7711e57d3ba6ff898b8a76/CAD-File/STEP). If your 3D printer is Bambu Lab series, [project files](https://github.com/Neil-YL/wireless-color-sensor/tree/c080448a7fcbc0e26ace216282e9614ede66aa17/CAD-File/BamBu-File) are available for BambuStudio.
 
-### Tools: 
+### Mechanical components and tools: 
 
-  - **Required:**
+  - **Mechanical components:**
+
+     <div style="float: right; margin-left: 10px; width: 500px;">
+      <img src="_static/images/Mechanical-Components.png" width="500">
+     </div>
+
+    - <span class="color-red">① M2.5-10mm screws (4x)</span>
+    - <span class="color-orange">② M2.5 hex nuts (4x)</span>
+    - <span class="color-blue">③ Painter's tape</span>
+
+    <br style="clear: both;"> 
+
+  - **Tools required:**
      <div style="float: right; margin-left: 10px; width: 500px;">
       <img src="_static/images/Bolt-nut-tape.png" width="500">
      </div>
 
     - <span class="color-red">Phillips-head #0 screwdriver</span>
-    - <span class="color-orange">M2.5-10mm screws and M2.5 hex nuts (4x each)</span>
-    - <span class="color-blue">Painter's tape</span>
-    - Soldering set (Photo below) 
+    - Soldering set 
   
   <br style="clear: both;"> 
 
-  - **Nice to have:**
+  - **Tools nice to have:**
     - Tools to remove 3D printing supports and deburr surface
     - Multimeter for electronic connection troubleshooting
    
@@ -115,6 +127,12 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
     <img src="_static/images/inner-wall.png" style="width: 500px;">
   </div>
 
+:::{hint}
+<span style="padding-left: 10px;">Use wirecutters to remove most of the supports from the printed parts.</span>  
+<span style="padding-left: 10px;">Clean up remaining spikes with sharp utility knives or scissors.</span>
+:::
+
+ 
    <br>
 
   #### Electronic parts soldering:
@@ -146,18 +164,20 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
      
   <br>
 
+  
   2. **Battery connnector:**
      
-     If <span class="color-blue">the polarity of your battery</span> 2-pin JST connector is opposite to <span class="color-red">that of the LipoSHIM</span>:
+     If you are working with the battery from the link provided in BOM section or if <span class="color-blue">the polarity of your battery</span> 2-pin JST connector is opposite to <span class="color-red">that of the LipoSHIM</span>:
 
      <div style="text-align: center; margin-top: 10px;">
        <img src="_static/images/Battery-soldering-1.png" style="width: 500px;">
      </div>
 
      :::{warning}
-     **Warning:** Never connect your battery to PicoSHIM with wrong polarity!!
+      Never connect your battery to PicoSHIM with wrong polarity!
      :::
-
+      
+     <a id="battery-connector"></a>
      You can correct it by cutting off the connector, swapping the wires, and then resoldering them to match the correct polarity.
 
      <div style="text-align: center; margin-top: 10px;">
@@ -180,17 +200,22 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
 
      <br>
 
-     Connect the transmitter to a power supply via USB cable and place the receiver on top of the transmitter (coils faced with coils). Check if <span class="color-red">the blue LED charging indicator</span> on the transmitter board lights up. You may use a multimeter to measure the voltage between the two jumper wires; the reading should be approximately 5V.
+     Connect the transmitter to a power supply via micro-USB port and place the receiver on top of the transmitter (coils faced with coils). Check if <span class="color-blue">the blue LED charging indicator</span> on the transmitter board lights up. You may use a multimeter to measure the voltage between the two jumper wires; the reading should be approximately 5V.
 
      <div style="text-align: center; margin-top: 10px;">
        <img src="_static/images/Receiver-soldering-3.png" style="width: 500px;">
      </div>      
-  
-  <br>
+
 
   #### Dual charging connection check:
 
-   You may check the connection of the dual wireless charging setup before start assembling. Use the short micro-USB/USB Type-A cable to connect both transmitters and connect the transmitter that has a free micro-USB port to a power supply. Test the receiver with the same procedure above for the wireless charging unit, the receiver should give a voltage reading of approximately 5V on each transmitter.
+   You may also check the connection of the dual wireless charging setup before start assembling. Use the short micro-USB/USB Type-A cable to connect both transmitters and connect the transmitter that has a free micro-USB port to a power supply. Test the receiver with the same procedure above for the wireless charging unit, the receiver should give a voltage reading of approximately 5V on each transmitter.
+
+  <div style="text-align: center; margin-top: 10px;">
+    <img src="_static/images/Dual-charging-test.png" style="width: 500px;">
+  </div>      
+  
+  <br>
       
   ### Assembling:
 
@@ -198,15 +223,37 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
 
   1. Connect battery to Picow and LipoSHIM assembly: 
   
-      Ensure the battery connector's polarity matches the +/- markings on the LipoSHIM. Connect the battery to the LipoSHIM with the JST connector. Adjust the wire of the battery to through a row of pins on the PicoW. 
-      
-      Test connection: Press the button on the LipoSHIM to power on the PicoW; the white LED indicator on the LipoSHIM should light up. Connect the PicoW to a power supply via the micro-USB port; the red LED charging indicator on the LipoSHIM should also light up. 
-      
+      Ensure the polarity of the battery matches the +/- markings on the LipoSHIM, if you are using the battery from the link provided in BOM section, [reverse](#battery-connector) the polarity before connecting it to the LipoSHIM. 
+     
+     :::{warning}
+       Never connect your battery to PicoSHIM with wrong polarity!
+     :::
+
+      Connect the battery to the LipoSHIM with the JST connector. Adjust the wires of the battery to through <span class="color-red">a row of pins</span> on the PicoW. 
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Battery-Picow-1.png" style="width: 500px;">
+     </div>   
+    
+     <br>
+
+      Test connection: Press the button on the LipoSHIM to power on the PicoW; <span class="color-blue">the white LED indicator</span> on the LipoSHIM should light up. Connect the PicoW to a power supply via the micro-USB port; <span class="color-red">the red LED charging indicator</span> on the LipoSHIM should also light up. 
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Battery-Picow-2.png" style="width: 500px;">
+     </div>   
+
+     <br>
+
       Power off and disconnect the power supply before proceeding with following steps.
 
   2. Mount PicoW on Picowbell: 
   
-      Place the PicoW on the top of the Picowbell sockets; the micro-USB port on PicoW should be at the same side as the STEMMA QT port on Picowbell. Carefully align the pins and press down the PicoW to secure it onto the Picowbell.
+      Place the PicoW on the top of the Picowbell sockets; the micro-USB port on PicoW should be at the same side as the STEMMA QT port on Picowbell. Carefully align the pins and press down the PicoW to secure it onto the Picowbell. 
+      
+   :::{hint}  
+   Since the power button on the PicoSHIM will interfere with the STEMMA QT port on the Picowbell, you don’t need to push the PicoW pins all the way down.
+   :::
 
   3. Connect wireless charging receiver to Picowbell: 
   
