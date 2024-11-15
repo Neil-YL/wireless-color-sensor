@@ -96,6 +96,10 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
 
   All the 3D printing files can be found in [this link](https://github.com/Neil-YL/wireless-color-sensor/tree/07829dd6418d59315a7711e57d3ba6ff898b8a76/CAD-File/STEP). If your 3D printer is Bambu Lab series, [project files](https://github.com/Neil-YL/wireless-color-sensor/tree/c080448a7fcbc0e26ace216282e9614ede66aa17/CAD-File/BamBu-File) are available for BambuStudio.
 
+:::{Hint}
+Print the sensor package and the charging port enclosure with light-color material so that the LED indicators could be visible from the outsides.
+:::
+
 ### Mechanical components and tools: 
 
   - **Mechanical components:**
@@ -137,13 +141,13 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
 
   <br style="clear: both;"> 
  
-## Hardware assembly:
+## Hardware assembly
 
   ### Preparation / Before you begin assembling: 
 
   #### 3D printed parts preparation:
 
-   Remove all printing supports from the 3D-printed parts. Deburr all the supported surfaces and edges, especially following heighted areas that will be used for assembly.
+   Remove all printing supports from the 3D-printed parts. Deburr all the supported surfaces and edges, especially following highlighted areas that will be used for assembly.
 
   :::{hint}
   <span style="padding-left: 10px;">Use wirecutters to remove most of the supports from the printed parts.</span>  
@@ -250,11 +254,11 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
 
   #### Dual charging connection check:
 
-    You may also check the connection of the dual wireless charging setup before start assembling. Use the short micro-USB/USB Type-A cable to connect two transmitters and connect the transmitter that has a free micro-USB port to a power supply. Test the receiver with the same procedure above for the wireless charging unit, the receiver should give a voltage reading of approximately 5V on each transmitter.
+   You may also check the connection of the dual wireless charging setup before start assembling. Use the short micro-USB/USB Type-A cable to connect two transmitters and connect the transmitter that has a free micro-USB port to a power supply. Test the receiver with the same procedure above for the wireless charging unit, the receiver should give a voltage reading of approximately 5V on each transmitter.
 
-  <div style="text-align: center; margin-top: 10px;">
-    <img src="_static/images/Dual-charging-test.png" style="width: 500px;">
-  </div>      
+   <div style="text-align: center; margin-top: 10px;">
+      <img src="_static/images/Dual-charging-test.png" style="width: 500px;">
+   </div>      
   
   <br>
       
@@ -365,34 +369,187 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
       :::
 
 
-  6. Place sensor stand to the main enclosure end: 
+  6. **Place sensor stand to the main enclosure end:**
   
-      The sensor stand is a thin board with four spikes, designed with a thinner edge and a thicker edge. Position the sensor stand with the thinner edge close to the opening of the main enclosure and spikes on the top. Insert it into the sensor end of the main enclosure. 
+      The sensor stand is a thin board with four spikes, designed with a thinner edge and a thicker edge. Position the sensor stand with <span class="color-red">the thinner edge</span> at the opening side of the main enclosure and the spikes on the top. 
+      
+      <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/sensor-stand-to-main-1.png" style="width: 500px;">
+     </div>   
 
-  7. Secure the color sensor to the stand: 
-  
-      Face down the AS7341, with the yellow square on AS7341 close to opening of the main enclosure, align the assemble holes with four spikes, secure AS7341 to the stand.
-  
-  8. Place wireless charger receiver on the inner wall of the enclosure and secure with painter's tape. 
+     <br>   
+      
+      Insert it into the sensor end of the main enclosure. If the sensor stand is properly assembled, the spikes will be slightly higher than the surrounding flat surface.
 
-  9. Aligning the sliding tips on both ends of the backboard to the sliding slot on the main enclosure, assemble the backboard to the main enclosure. 
+      <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/sensor-stand-to-main-2.png" style="width: 500px;">
+     </div>   
+
+     <br>   
+
+  7. **Secure the color sensor to the stand:** 
+  
+      Face down the AS7341, with <span class="color-red">the yellow square</span> on AS7341 close to opening of the main enclosure, align the assemble holes with four spikes, secure AS7341 to the stand.
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/sensor-to-stand-1.png" style="width: 500px;">
+     </div>   
+
+     <br>   
+  
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/sensor-to-stand-2.png" style="width: 500px;">
+     </div>   
+
+     <br>   
+
+      The yellow square on AS7341 should be visible from the hole of the sensor enclosure if the sensor is assembled properly.
+    
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/sensor-to-stand-3.png" style="width: 500px;">
+     </div>   
+
+     <br>   
+
+:::{Note}
+ If you would like to disassemble the sensor or sensor stand after assembly, use tweezers(or a similar tool) to gently pry up one side of the sensor, then the other, gradually lifting it out from four spikes. For the sensor stand, use a thin tool to push it up from the bottom. Be careful not to touch the central electronic components of the sensor during this process.
+:::
+
+
+  8. **Secure the receiver:**
+
+     Prepare two pieces of painter’s tape, approximately 40mm long each. Place the wireless charger receiver on the inner wall of the enclosure, with the coils facing against the wall and the receiver board on the right, and secure with the painter's tape. 
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/receiver-to-main-1.png" style="width: 500px;">
+     </div>   
+
+     <br>   
+
+
+  9. **Final Assembly of the Backboard and Main Enclosure：**
+
+     Aligning the sliding tips on both ends of the backboard to the sliding slots on the main enclosure, adjusting all the wires within the enclosure, carefully assemble the backboard to the main enclosure. 
+    
+     <div style="text-align: center; margin-top: 10px; display: flex; justify-content: center;">
+      <img src="_static/images/backboard-to-main-2.png" style="width: 400px; margin-right: 10px;">
+      <img src="_static/images/backboard-to-main-1.png" style="width: 400px;">
+     </div>
+
+     <br>   
+ 
+     **🎉 Congrats, your wireless color sensor is ready to go!**
+    
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/backboard-to-main-3.png" style="width: 500px;">
+     </div>   
+
+     <br>  
 
   #### Dual Charging port assembling:
 
   1. Join the A and B sides of the charging port enclosure, aligning them properly, and secure both parts together.
 
-  2. Plug the short micro-USB cable into the micro-USB port on one transmitter. Place the transmitter onto the transmitter support with the coils facing outward. Route the coil wire down from the thinner side of the support. Insert the transmitter support into the port enclosure assembly, ensuring there is no gap between the transmitter and the wall of the sensor slot.
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Port-A-B-1.png" style="width: 500px;">
+     </div>   
 
-  3. Thread the long micro-USB cable through the square hole into the charging port assembly with the microusb head.
+     <br>  
+ 
 
-  4. Place another transmitter on the transmitter support with the coils facing outward. Route the coil wire down from the thicker side of the support through the routing slot. Insert the transmitter support into the port enclosure assembly, ensuring there is no gap between the transmitter and the wall of the sensor slot. 
-        
+  2. Plug the short micro-USB cable into <span class="color-red">the micro-USB port</span> on one transmitter.
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Transmitter-A-support-1.png" style="width: 500px;">
+     </div>   
+
+     <br>  
+
+     Place the transmitter onto the transmitter support with the coils facing outward. 
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Transmitter-A-support-2.png" style="width: 500px;">
+     </div>   
+
+     <br>
+
+     Route the coils wires down from <span class="color-blue">the thinner edge</span> of the support. 
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Transmitter-A-support-3.png" style="width: 500px;">
+     </div>   
+
+     <br>
+     
+     Insert the transmitter support with transmitter board into the port enclosure assembly. Then, secure it in place, ensuring there is no gap between the transmitter coils and the wall of the sensor slot.
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Transmitter-A-support-4.png" style="width: 500px;">
+     </div>   
+
+     <br>
+
+:::{Hint}
+ If there is a gap between the coils and the inner wall, or if the transmitter support bends significantly, consider polishing the walls for assembling to achieve a better fit.
+:::
+
+  3. Thread the long micro-USB cable through the square hole into the charging port assembly with the micro-USB head.
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Long-usb-cable-1.png" style="width: 500px;">
+     </div>   
+
+     <br>
+
+  4. Place another transmitter on the transmitter support with the coils facing outward. 
+  
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Transmitter-B-support-1.png" style="width: 500px;">
+     </div>   
+
+     <br>  
+
+     Route the coils wires down from the thicker side of the support through <span class="color-blue">the routing slot</span>. 
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Transmitter-B-support-2.png" style="width: 500px;">
+     </div>   
+
+     <br>  
+
+     Insert the transmitter support into the port enclosure assembly, leaving the transmitter board on the top. Secure the transmitter support in place, ensuring there is no gap between the transmitter coils and the wall of the sensor slot.
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Transmitter-B-support-3.png" style="width: 500px;">
+     </div>   
+
+     <br>  
+
   5. Connect the short USB cable to the USB type-A port on the second transmitter. Connect the long micro-USB cable to the micro-USB port of the second transmitter. If you find any difficulties with cable connections, try swapping two transmitters to rearrange cable.
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Cables-connection-1.png" style="width: 500px;">
+     </div>   
+
+     <br>  
         
-  6. Connect the long cable to a power supply. The LED indicators on both transmitters should light up in the following sequence: blue, red, blue, and red. If either indcator does not flash, you may check the cable connections.
+  6. Connect the long cable to a power supply. The LED indicators on both transmitters should flash in the following sequence: blue; red; blue and red, and all off. If either indcator does not flash, you may check the cable connections.
+
+     <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/Cables-connection-2.png" style="width: 500px;">
+     </div>   
+
+     <br>  
+
 
   7. Arrange the cables inside the enclosure and assemble the base board to the port enclosure. Place the sensor package on the slot of the charging port, the red indicator on the sensor package should light up.
 
+     <div style="text-align: center; margin-top: 10px; display: flex; justify-content: center;">
+      <img src="_static/images/Sensor-charging-1.png" style="width: 400px; margin-right: 10px;">
+      <img src="_static/images/Sensor-charging-2.png" style="width: 400px;">
+     </div>
+
+     <br>   
 ## Software part
 
 
