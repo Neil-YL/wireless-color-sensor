@@ -3,7 +3,7 @@ name: Deploy Sphinx Docs to GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main  
 
 jobs:
   build:
@@ -11,27 +11,27 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
-      
+        uses: actions/checkout@v3
+
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install sphinx
-          
+          pip install sphinx myst-parser  # 安装 myst-parser
+          pip install -r requirements.txt  # 如果有其他依赖
 
       - name: Build documentation
         run: |
-          make html -C 
+          make html  # 构建 Sphinx 文档
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_build/html
+          publish_dir: ./_build/html  
           keep_files: true
-          enable_jekyll: false
+          enable_jekyll: false  
