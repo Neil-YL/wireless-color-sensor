@@ -21,12 +21,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install sphinx myst-parser  # 安装 myst-parser
-          pip install -r requirements.txt  # 如果有其他依赖
+          pip install sphinx myst-parser  
+          
 
       - name: Build documentation
         run: |
-          make html  # 构建 Sphinx 文档
+          make html  
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
