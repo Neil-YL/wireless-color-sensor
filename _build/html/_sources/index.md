@@ -2,7 +2,7 @@
 
 ## Overview 
 
-This documentation provides a guide to assemble and test a color sensor package with a wireless charging port that could be implemented to the OT-2 liquid handling robot. 
+This documentation provides a guide to assemble and test a color sensor package with a dual wireless charging port that could be implemented to the OT-2 liquid handling robot. 
 
    <div style="text-align: center; margin-top: 10px;">
       <img src="_static/images/Wireless-color-sensor-in-OT-2.png" width="500">
@@ -277,7 +277,7 @@ Print the sensor package and the charging port enclosure with light-color materi
        Never connect your battery to PicoSHIM with wrong polarity!
      :::
 
-      Connect the battery to the LipoSHIM with the JST connector. Adjust the wires of the battery to through <span class="color-red">a row of pins</span> on the PicoW. 
+      Connect the battery to the LipoSHIM with <span class="color-blue">the JST connector</span>. Adjust the wires of the battery to through <span class="color-red">a row of pins</span> on the PicoW. 
 
      <div style="text-align: center; margin-top: 10px;">
        <img src="_static/images/Battery-Picow-1.png" style="width: 500px;">
@@ -415,7 +415,7 @@ Print the sensor package and the charging port enclosure with light-color materi
      <br>   
 
 :::{Note}
- If you would like to disassemble the sensor or sensor stand after assembly, use tweezers(or a similar tool) to gently pry up one side of the sensor, then the other, gradually lifting it out from four spikes. For the sensor stand, use a thin tool to push it up from the bottom. Be careful not to touch the central electronic components of the sensor during this process.
+ If you would like to disassemble the sensor or sensor stand after assembly, use a tweezer(or a similar tool) to gently pry up one side of the sensor, then the other side, gradually lifting it out from four spikes. For the sensor stand, use a thin tool to push it up from the bottom. Be careful not to touch the central electronic components of the sensor during this process.
 :::
 
 
@@ -435,8 +435,8 @@ Print the sensor package and the charging port enclosure with light-color materi
      Aligning the sliding tips on both ends of the backboard to the sliding slots on the main enclosure, adjusting all the wires within the enclosure, carefully assemble the backboard to the main enclosure. 
     
      <div style="text-align: center; margin-top: 10px; display: flex; justify-content: center;">
-      <img src="_static/images/backboard-to-main-2.png" style="width: 400px; margin-right: 10px;">
-      <img src="_static/images/backboard-to-main-1.png" style="width: 400px;">
+      <img src="_static/images/backboard-to-main-1.png" style="width: 400px; margin-right: 10px;">
+      <img src="_static/images/backboard-to-main-2.png" style="width: 400px;">
      </div>
 
      <br>   
