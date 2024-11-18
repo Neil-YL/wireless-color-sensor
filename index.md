@@ -8,6 +8,7 @@ This documentation provides a guide to assemble and test a color sensor package 
       <img src="_static/images/Wireless-color-sensor-in-OT-2.png" width="500">
   </div>
 
+<br>
 Following is a video of liquid color matching demo run on OT-2 with this wireless color sensor:
 
 (Video link to be added)

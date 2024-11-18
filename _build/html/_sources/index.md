@@ -2,11 +2,14 @@
 
 ## Overview 
 
-This documentation provides a guide to assemble and test a color sensor package with a wireless charging port that could be implemented to the OT-2 liquid handling robot. Following is a video of liquid color matching demo run on OT-2 with this wireless color sensor:
+This documentation provides a guide to assemble and test a color sensor package with a wireless charging port that could be implemented to the OT-2 liquid handling robot. 
 
    <div style="text-align: center; margin-top: 10px;">
       <img src="_static/images/Wireless-color-sensor-in-OT-2.png" width="500">
   </div>
+
+<br>
+Following is a video of liquid color matching demo run on OT-2 with this wireless color sensor:
 
 (Video link to be added)
 
