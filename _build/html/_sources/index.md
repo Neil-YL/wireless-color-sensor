@@ -92,7 +92,7 @@ This documentation assumes that readers have completed [Course 1: Hello World](h
 
     - <span class="color-red">① Enclosure A side</span>
     - <span class="color-orange">② Enclosure B side</span>
-    - <span class="color-blue">③ Base</span>
+    - <span class="color-blue">③ Base board</span>
     - <span class="color-magenta">④ Transmitter supports (2x) </span>
 
     <br style="clear: both;"> 
@@ -372,7 +372,7 @@ Print the sensor package and the charging port enclosure with light-color materi
       :::
 
 
-  6. **Place sensor stand to the main enclosure end:**
+  6. **Secure sensor stand to the main enclosure end:**
   
       The sensor stand is a thin board with four spikes, designed with a thinner edge and a thicker edge. Position the sensor stand with <span class="color-red">the thinner edge</span> at the opening side of the main enclosure and the spikes on the top. 
       

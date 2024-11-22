@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+env/
+ENV/
+venv/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+*.bat
+
+# IDE and editor specific files
+.vscode/
+
