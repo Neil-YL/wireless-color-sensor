@@ -449,7 +449,7 @@ Print the sensor package and the charging port enclosure with light-color materi
 
 
  <div style="text-align: center; margin-top: 10px;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/9jREn-jBnCQ" 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9jREn-jBnCQ?list=PLY8jlH96_zN2E55mRGohK9wP5QhzqMF7C&rel=0" 
               title="YouTube video player" 
               frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -579,7 +579,7 @@ Print the sensor package and the charging port enclosure with light-color materi
 
 
  <div style="text-align: center; margin-top: 10px;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/p-gA2RxMddI" 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p-gA2RxMddI?list=PLY8jlH96_zN2E55mRGohK9wP5QhzqMF7C&rel=0" 
               title="YouTube video player" 
               frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
