@@ -269,6 +269,7 @@ Print the sensor package and the charging port enclosure with light-color materi
 
   #### Sensor Package assembling:
 
+
   1. **Connect battery to Picow and LipoSHIM assembly:**
   
       Ensure the polarity of the battery matches the +/- markings on the LipoSHIM, if you are using the battery from the link provided in BOM section, [reverse the polarity](battery-connector) before connecting it to the LipoSHIM. 
@@ -440,14 +441,31 @@ Print the sensor package and the charging port enclosure with light-color materi
      </div>
 
      <br>   
- 
-     **🎉 Congrats, your wireless color sensor is ready to go!**
-    
-     <div style="text-align: center; margin-top: 10px;">
-       <img src="_static/images/backboard-to-main-3.png" style="width: 500px;">
-     </div>   
 
-     <br>  
+:::{Note}
+  **Video Guide**:
+   You may also refer to this video for step-by-step assembly guide
+:::
+
+
+ <div style="text-align: center; margin-top: 10px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9jREn-jBnCQ" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+ </div>
+
+  <br>  
+
+  **🎉 Congrats, your wireless color sensor is ready to go!**
+    
+   <div style="text-align: center; margin-top: 10px;">
+       <img src="_static/images/backboard-to-main-3.png" style="width: 500px;">
+   </div>   
+
+   <br>  
 
   #### Dual Charging port assembling:
 
@@ -553,6 +571,24 @@ Print the sensor package and the charging port enclosure with light-color materi
      </div>
 
      <br>   
+
+:::{Note}
+  **Video Guide**:
+   You may also refer to this video for step-by-step assembly guide
+:::
+
+
+ <div style="text-align: center; margin-top: 10px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p-gA2RxMddI" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+ </div>
+
+  <br>  
+  
 ## Software part
 
 
