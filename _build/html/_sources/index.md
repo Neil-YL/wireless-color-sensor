@@ -591,6 +591,104 @@ Print the sensor package and the charging port enclosure with light-color materi
   
 ## Software part
 
+### Test code for sensor
+   Before closing the enclosure, you may run the test code for the sensor. Turn on the PicoW, connect it to your PC and follow the setup instructions for Thonny and MicroPython for your Pico W and the AS7341 library file, in [Course 1: Hello World](https://ac-microcourses.readthedocs.io/en/latest/courses/hello-world/index.html#).
+
+   Save the following codes as "as7341_test.py" and upload it to your PicoW. 
+    
+```python
+      import time
+      from machine import I2C, Pin
+      from as7341_sensor import Sensor
+
+      # Initialize the AS7341 sensor
+      sensor = Sensor(i2c=I2C(0, scl=Pin(5), sda=Pin(4)))
+
+      def read_sensor_data():
+          """Read dictionary of sensor data"""
+          # Get all channel data from the sensor
+          channel_data = sensor.all_channels
+
+          CHANNEL_NAMES = [
+              "ch410",
+              "ch440",
+              "ch470",
+              "ch510",
+              "ch550",
+              "ch583",
+              "ch620",
+              "ch670",
+          ]
+
+          # Return a dictionary that maps channel names to sensor data
+          return dict(zip(CHANNEL_NAMES, channel_data))
+
+
+      print("Testing sensor...")
+      sensor_data = read_sensor_data()
+      print(sensor_data)
+
+
+      def test_sensor():
+          """Interactive testing interface for the AS7341 sensor."""
+          print("AS7341 Sensor Test")
+          print("==================")
+          print("Type 'read' to sample data or 'exit' to quit.")
+
+          while True:
+              # Wait for a command from the user
+              command = input("Command: ").strip().lower()
+
+              if command == "read":
+                  # Ask whether to turn on the LED
+                  led_choice = input("Turn on LED for this reading? (yes/no): ").strip().lower()
+                  if led_choice == "yes":
+                      sensor.LED = True  # Turn on LED
+                      print("LED is ON.")
+
+                  # Trigger sensor data reading
+                  sensor_data = read_sensor_data()
+                  if sensor_data:
+                      print("Sensor Data:")
+                      for wavelength, value in sensor_data.items():
+                          #print(f"{wavelength}: {value}")
+                          print(f"{value}")
+                  else:
+                      print("Failed to read sensor data.")
+
+                  # Turn off the LED if it was turned on
+                  if led_choice == "yes":
+                      sensor.LED = False  # Turn off LED
+                      print("LED is OFF.")
+
+              elif command == "exit":
+                  print("Exiting the program.")
+                  break
+              else:
+                  print("Invalid command. Type 'read' to sample or 'exit' to quit.")
+
+      # Directly call the test_sensor function
+      test_sensor()
+```  
+ 
+Run this script on your Pico W. It should return results as follows; the data for each channel may vary depending on what your color sensor is detecting.
+
+
+```  
+    MPY: soft reboot
+    Detected devices at I2C-addresses: 0x39
+    Testing sensor...
+    {'ch583': 1507, 'ch670': 775, 'ch510': 756, 'ch410': 99, 'ch620': 1548, 'ch470': 344, 'ch550': 1172, 'ch440': 294}
+    AS7341 Sensor Test
+    ==================
+    Type 'read' to sample data or 'exit' to quit.
+    Command: 
+```   
+  
+You use command "Read" to start a measurement, and "Yes/No" to control the LED lighting on the color sensor. 
+
+ 
+
 
         
 

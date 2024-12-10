@@ -304,7 +304,10 @@
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-part">Software part</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-part">Software part</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-code-for-sensor">Test code for sensor</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -802,6 +805,97 @@ You may also refer to this video for step-by-step assembly guide</p>
 </section>
 <section id="software-part">
 <h2>Software part<a class="headerlink" href="#software-part" title="Link to this heading">#</a></h2>
+<section id="test-code-for-sensor">
+<h3>Test code for sensor<a class="headerlink" href="#test-code-for-sensor" title="Link to this heading">#</a></h3>
+<p>Before closing the enclosure, you may run the test code for the sensor. Turn on the PicoW, connect it to your PC and follow the setup instructions for Thonny and MicroPython for your Pico W and the AS7341 library file, in <a class="reference external" href="https://ac-microcourses.readthedocs.io/en/latest/courses/hello-world/index.html#">Course 1: Hello World</a>.</p>
+<p>Save the following codes as “as7341_test.py” and upload it to your PicoW.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      <span class="kn">import</span> <span class="nn">time</span>
+      <span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">I2C</span><span class="p">,</span> <span class="n">Pin</span>
+      <span class="kn">from</span> <span class="nn">as7341_sensor</span> <span class="kn">import</span> <span class="n">Sensor</span>
+
+      <span class="c1"># Initialize the AS7341 sensor</span>
+      <span class="n">sensor</span> <span class="o">=</span> <span class="n">Sensor</span><span class="p">(</span><span class="n">i2c</span><span class="o">=</span><span class="n">I2C</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">scl</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">sda</span><span class="o">=</span><span class="n">Pin</span><span class="p">(</span><span class="mi">4</span><span class="p">)))</span>
+
+      <span class="k">def</span> <span class="nf">read_sensor_data</span><span class="p">():</span>
+<span class="w">          </span><span class="sd">&quot;&quot;&quot;Read dictionary of sensor data&quot;&quot;&quot;</span>
+          <span class="c1"># Get all channel data from the sensor</span>
+          <span class="n">channel_data</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">all_channels</span>
+
+          <span class="n">CHANNEL_NAMES</span> <span class="o">=</span> <span class="p">[</span>
+              <span class="s2">&quot;ch410&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;ch440&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;ch470&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;ch510&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;ch550&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;ch583&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;ch620&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;ch670&quot;</span><span class="p">,</span>
+          <span class="p">]</span>
+
+          <span class="c1"># Return a dictionary that maps channel names to sensor data</span>
+          <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">CHANNEL_NAMES</span><span class="p">,</span> <span class="n">channel_data</span><span class="p">))</span>
+
+
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Testing sensor...&quot;</span><span class="p">)</span>
+      <span class="n">sensor_data</span> <span class="o">=</span> <span class="n">read_sensor_data</span><span class="p">()</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">sensor_data</span><span class="p">)</span>
+
+
+      <span class="k">def</span> <span class="nf">test_sensor</span><span class="p">():</span>
+<span class="w">          </span><span class="sd">&quot;&quot;&quot;Interactive testing interface for the AS7341 sensor.&quot;&quot;&quot;</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AS7341 Sensor Test&quot;</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==================&quot;</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Type &#39;read&#39; to sample data or &#39;exit&#39; to quit.&quot;</span><span class="p">)</span>
+
+          <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+              <span class="c1"># Wait for a command from the user</span>
+              <span class="n">command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Command: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+              <span class="k">if</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;read&quot;</span><span class="p">:</span>
+                  <span class="c1"># Ask whether to turn on the LED</span>
+                  <span class="n">led_choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Turn on LED for this reading? (yes/no): &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+                  <span class="k">if</span> <span class="n">led_choice</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+                      <span class="n">sensor</span><span class="o">.</span><span class="n">LED</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># Turn on LED</span>
+                      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LED is ON.&quot;</span><span class="p">)</span>
+
+                  <span class="c1"># Trigger sensor data reading</span>
+                  <span class="n">sensor_data</span> <span class="o">=</span> <span class="n">read_sensor_data</span><span class="p">()</span>
+                  <span class="k">if</span> <span class="n">sensor_data</span><span class="p">:</span>
+                      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sensor Data:&quot;</span><span class="p">)</span>
+                      <span class="k">for</span> <span class="n">wavelength</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">sensor_data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                          <span class="c1">#print(f&quot;{wavelength}: {value}&quot;)</span>
+                          <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                  <span class="k">else</span><span class="p">:</span>
+                      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Failed to read sensor data.&quot;</span><span class="p">)</span>
+
+                  <span class="c1"># Turn off the LED if it was turned on</span>
+                  <span class="k">if</span> <span class="n">led_choice</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+                      <span class="n">sensor</span><span class="o">.</span><span class="n">LED</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># Turn off LED</span>
+                      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LED is OFF.&quot;</span><span class="p">)</span>
+
+              <span class="k">elif</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;exit&quot;</span><span class="p">:</span>
+                  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Exiting the program.&quot;</span><span class="p">)</span>
+                  <span class="k">break</span>
+              <span class="k">else</span><span class="p">:</span>
+                  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid command. Type &#39;read&#39; to sample or &#39;exit&#39; to quit.&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Directly call the test_sensor function</span>
+      <span class="n">test_sensor</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Run this script on your Pico W. It should return results as follows; the data for each channel may vary depending on what your color sensor is detecting.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">MPY</span><span class="p">:</span> <span class="n">soft</span> <span class="n">reboot</span>
+    <span class="n">Detected</span> <span class="n">devices</span> <span class="n">at</span> <span class="n">I2C</span><span class="o">-</span><span class="n">addresses</span><span class="p">:</span> <span class="mh">0x39</span>
+    <span class="n">Testing</span> <span class="n">sensor</span><span class="o">...</span>
+    <span class="p">{</span><span class="s1">&#39;ch583&#39;</span><span class="p">:</span> <span class="mi">1507</span><span class="p">,</span> <span class="s1">&#39;ch670&#39;</span><span class="p">:</span> <span class="mi">775</span><span class="p">,</span> <span class="s1">&#39;ch510&#39;</span><span class="p">:</span> <span class="mi">756</span><span class="p">,</span> <span class="s1">&#39;ch410&#39;</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> <span class="s1">&#39;ch620&#39;</span><span class="p">:</span> <span class="mi">1548</span><span class="p">,</span> <span class="s1">&#39;ch470&#39;</span><span class="p">:</span> <span class="mi">344</span><span class="p">,</span> <span class="s1">&#39;ch550&#39;</span><span class="p">:</span> <span class="mi">1172</span><span class="p">,</span> <span class="s1">&#39;ch440&#39;</span><span class="p">:</span> <span class="mi">294</span><span class="p">}</span>
+    <span class="n">AS7341</span> <span class="n">Sensor</span> <span class="n">Test</span>
+    <span class="o">==================</span>
+    <span class="n">Type</span> <span class="s1">&#39;read&#39;</span> <span class="n">to</span> <span class="n">sample</span> <span class="n">data</span> <span class="ow">or</span> <span class="s1">&#39;exit&#39;</span> <span class="n">to</span> <span class="n">quit</span><span class="o">.</span>
+    <span class="n">Command</span><span class="p">:</span> 
+</pre></div>
+</div>
+<p>You use command “Read” to start a measurement, and “Yes/No” to control the LED lighting on the color sensor.</p>
+</section>
 </section>
 </section>
 
@@ -855,7 +949,10 @@ You may also refer to this video for step-by-step assembly guide</p>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-part">Software part</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-part">Software part</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-code-for-sensor">Test code for sensor</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
